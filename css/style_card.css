@@ -1,0 +1,58 @@
+/* -------------------------------------------------------------------------- */
+/*                  Style of a card made the 12th of 08                       */
+/* -------------------------------------------------------------------------- */
+
+.Card-120824 {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card-120824:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Picture-120824 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.Container-120824 h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.Container-120824 p {
+    margin: 8px 0 0;
+    color: #777;
+}
+
+/* -------------------------------------------------------------------------- */
+/*            To minimize the size of the cards when a phone is used.         */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+    .card {
+        width: 400px;
+        padding: 15px;
+    }
+
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+

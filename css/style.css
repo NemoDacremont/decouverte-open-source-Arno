@@ -1,0 +1,17 @@
+/* -------------------------------------------------------------------------- */
+/*                  To put a card one below the other.                        */
+/* -------------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+/* -------------------------------------------------------------------------- */
+
