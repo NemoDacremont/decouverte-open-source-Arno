@@ -1,0 +1,36 @@
+header {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    gap: 5%;
+}
+
+#header_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4dvh;
+}
+
+button {
+    background: linear-gradient(to right, #F7E016, #F7B816);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+#header_logo {
+    height: 200px;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
