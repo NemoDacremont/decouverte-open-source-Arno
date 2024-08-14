@@ -2,7 +2,7 @@
 /*                  Style of a card made the 12th of 08                       */
 /* -------------------------------------------------------------------------- */
 
-.Card-120824 {
+.card-120824 {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -13,12 +13,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Card-120824:hover {
+.card-120824:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.Picture-120824 {
+.card-120824__picture {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -40,13 +40,13 @@
 /*            To minimize the size of the cards when a phone is used.         */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 500px) {
-    .card {
+@media (max-width: 720px) {
+    .card-120824 {
         width: 400px;
         padding: 15px;
     }
 
-    .profile-photo {
+    .Container-120824 {
         width: 60px;
         height: 60px;
         margin-right: 15px;
