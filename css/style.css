@@ -176,8 +176,13 @@ footer a {
 
 @media (max-width: 767px) {
     .header {
+        width: auto;
         flex-direction: column;
         padding-left: 64px;
         padding-right: 64px;
+    }
+    
+    .button__bar {
+        flex-wrap: wrap;
     }
 }

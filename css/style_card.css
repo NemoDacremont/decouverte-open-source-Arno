@@ -8,7 +8,7 @@
     padding: 24px;
     max-width: 700px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    white-space: nowrap;
+    max-width: calc(75vw - 48px);
 }
 
 .card-120824:hover {
@@ -41,8 +41,13 @@
 
 @media (max-width: 720px) {
     .card-120824 {
-        width: 400px;
+        width: 100%;
+        max-width: calc(80vw - 48px);
         padding: 15px;
+    }
+
+    .card-120824:hover {
+        transform: scale(1.2);
     }
 
     .card-120824__picture {
