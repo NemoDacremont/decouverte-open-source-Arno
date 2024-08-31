@@ -47,9 +47,8 @@ table {
 }
 
 
-
 /* -------------------------------------------------------------------------- */
-/*                  To put a card one below the other.                        */
+/*                              Page style                                    */
 /* -------------------------------------------------------------------------- */
 
 main {
@@ -57,9 +56,8 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     flex-direction: column;
-    background-color: #f4f4f4;
+    margin: 64px auto;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -67,22 +65,23 @@ main {
 /* -------------------------------------------------------------------------- */
 
 footer {
-    background-color: #f0f0f0;
-    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3f3f3;
+    border-top: 1px solid #d1d1d1;
+    padding: 64px 16px;
     text-align: center;
     bottom: 0;
     left: 0;
-    width: 100%;
 }
 
 footer a {
     color: #333;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 16px;
 }
 
 .social-icons {
-    margin-bottom: 15px;
+    margin-bottom: 32px;
 }
 
 .social-icons img {
@@ -111,12 +110,12 @@ footer a {
 /* -------------------------------------------------------------------------- */
 
 .header {
-    margin-top: 64px;
     display: flex;
     align-items: center;
-    padding-left: 181px;
-    padding-right: 181px;
     gap: 48px;
+    margin: 64px auto;
+    width: 80vw;
+    max-width: 1000px;
 }
 
 .header__content {
@@ -151,6 +150,7 @@ footer a {
     font-size: 18px;
     font-weight: 500;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 
@@ -176,8 +176,13 @@ footer a {
 
 @media (max-width: 767px) {
     .header {
+        width: auto;
         flex-direction: column;
         padding-left: 64px;
         padding-right: 64px;
+    }
+    
+    .button__bar {
+        flex-wrap: wrap;
     }
 }
