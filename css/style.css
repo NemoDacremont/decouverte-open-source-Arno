@@ -1,0 +1,188 @@
+/* -------------------------------------------------------------------------- */
+/*                  CSS Reset                                                 */
+/* -------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Page style                                    */
+/* -------------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 64px auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Footer                                      */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3f3f3;
+    border-top: 1px solid #d1d1d1;
+    padding: 64px 16px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.social-icons {
+    margin-bottom: 32px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    font-size: 16px;
+    hyphens: none;
+    width: 90%;
+    margin: auto;
+}
+
+.logo-INP img {
+    width: 100px;
+}
+
+.bold {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Header                                      */
+/* -------------------------------------------------------------------------- */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin: 64px auto;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header__description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.button__bar {
+    display: flex;
+    gap: 12px;
+}
+
+.header__button {
+    background-image: linear-gradient(to right, #F7E016, #F7B816);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .header__button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .header__content {
+        margin-top: 17.5px;
+        margin-bottom: 17.5px;
+    }
+}
+
+.header__button:active {
+    transform: scale(0.95);
+}
+
+.header__logo {
+    height: 256px;
+    width: 256px;
+}
+
+@media (max-width: 767px) {
+    .header {
+        width: auto;
+        flex-direction: column;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    
+    .button__bar {
+        flex-wrap: wrap;
+    }
+}
