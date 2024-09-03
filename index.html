@@ -21,12 +21,8 @@
 				</p>
 
 				<div class="button__bar">
-					<a href="#comment_participer">
-						<button class="header__button">Comment participer ?</button>
-					</a>
-					<a href="https://github.com/Eirbware/decouverte-open-source" target="_blank">
-						<button class="header__button">GitHub</button>
-					</a>
+					<button class="header__button" onclick="location.hash = '#comment_participer'">Comment participer ?</button>
+					<button class="header__button" onclick="window.open('https://github.com/Eirbware/decouverte-open-source', '_blank').focus();">GitHub</button>
 				</div>
 			</div>
 		</header>
@@ -71,22 +67,16 @@
 				<ol class="participate__description">
 					<li class="participate__list_element"> 
 						1) 
-						<a 
-							href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo" 
-							target="blank">
-							<button class="participate__button">
-								Fork
-							</button></a>
+						<button class="participate__button" onclick="window.open('https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo', '_blank').focus();">
+							Fork
+						</button>
 						the repository available on our GitHub. 
 					</li>
 					<li class="participate__list_element"> 
 						2) Once cloned to your computer, 
-						<a 
-							href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository" 
-							target="_blank">
-							<button class="participate__button"> 
-								create a new branch 
-							</button></a>. 
+						<button class="participate__button" onclick="window.open('https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository', '_blank').focus();">
+							create a new branch
+						</button>. 
 					</li>
 					<li class="participate__list_element"> 3) Push your changes on this branch. </li>
 					<li class="participate__list_element"> 4) Go on github to ask for a Pull Request. </li>
