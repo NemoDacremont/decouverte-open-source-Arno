@@ -7,6 +7,7 @@
 		<link rel="icon" type="image/x-icon" href="./static/favicon.ico">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/style_card.css">
+		<link rel="stylesheet" href="./css/participate.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -21,8 +22,8 @@
 				</p>
 
 				<div class="button__bar">
-					<button class="header__button">Comment participer ?</button>
-					<button onclick="location.href='https://github.com/Eirbware/decouverte-open-source'" class="header__button">GitHub</button>
+					<button class="header__button" onclick="location.hash = '#comment_participer'">Comment participer ?</button>
+					<button class="header__button" onclick="window.open('https://github.com/Eirbware/decouverte-open-source', '_blank').focus();">GitHub</button>
 				</div>
 			</div>
 		</header>
@@ -59,19 +60,48 @@
 			</div>
 
 		</main>
+		<div class="participate" id="comment_participer">
+			<div class="participate__content">
+
+				<h2 class="participate__title"> How to participate ? </h2>
+
+				<ol class="participate__description">
+					<li class="participate__list_element"> 
+						1) 
+						<button class="participate__button" onclick="window.open('https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo', '_blank').focus();">
+							Fork
+						</button>
+						the repository available on our GitHub. 
+					</li>
+					<li class="participate__list_element"> 
+						2) Once cloned to your computer, 
+						<button class="participate__button" onclick="window.open('https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository', '_blank').focus();">
+							create a new branch
+						</button>. 
+					</li>
+					<li class="participate__list_element"> 3) Push your changes on this branch. </li>
+					<li class="participate__list_element"> 4) Go on github to ask for a Pull Request. </li>
+				</ol>
+
+			</div>
+		</div>
 		<footer>
 			<div class="social-icons">
-				<a href="https://github.com/Eirbware"
+				<a href="https://github.com/Eirbware" 
+	   			   target="_blank"
 				  ><img src="static/icons/github-mark.svg" alt="GitHub"
 				/></a>
-				<a href="https://www.facebook.com/eirbware"
+				<a href="https://www.facebook.com/eirbware" 
+	   			   target="_blank"
 				  ><img src="static/icons/facebook.svg" alt="Facebook"
 				/></a>
-				<a href="https://t.me/eirbware"
+				<a href="https://t.me/eirbware" 
+	               target="_blank"
 				  ><img src="static/icons/telegram-logo.svg" alt="Telegram"
 				/></a>
 				<a
 				  href="https://enseirb-matmeca.bordeaux-inp.fr/fr"
+	   			  target="_blank"
 				  class="logo-INP"
 				  ><img src="static/icons/logo_em.svg" alt="INP Logo"
 				/></a>

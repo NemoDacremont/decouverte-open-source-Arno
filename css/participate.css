@@ -1,0 +1,74 @@
+/* -------------------------------------------------------------------------- */
+/*                          How to participate                                */
+/* -------------------------------------------------------------------------- */
+
+.participate {
+    display: flex;
+    gap: 48px;
+    margin: 64px auto;
+    margin-bottom: 64px;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.participate__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.participate__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.participate__description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.participate__list_element {
+    margin-bottom: 20px;
+}
+
+.participate__button {
+    background-image: linear-gradient(to right, #F7E016, #F7B816);
+    border: none;
+    border-radius: 25px;
+    padding: 6px 12.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .participate__button:hover {
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8.5px 25px 0 rgba(0,0,0,0.19);
+    }
+
+    .participate__content {
+        margin-top: 17.5px;
+        margin-bottom: 17.5px;
+    }
+}
+
+.participate__button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 767px) {
+    .participate {
+        width: auto;
+        flex-direction: column;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+
+
