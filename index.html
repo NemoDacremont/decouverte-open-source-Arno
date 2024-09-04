@@ -59,6 +59,23 @@
 				</div>
 			</div>
 
+  			<script>
+  			  const resizeTexts = () => {
+  			    let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+  			    document.querySelectorAll(".card-120824").forEach(e => {
+  			      let rect = e.getBoundingClientRect();
+  			      let centerPos = (rect.top + rect.bottom) / 2;
+  			      let distanceToCenter = Math.abs(centerPos - vh/2);
+  			      let size = Math.max(0.1, 1.35*(1-distanceToCenter/vh*1.5));
+  			      e.style.transform = "scale(" + size*100 + "%)";
+  			    })
+  			  }
+  			  addEventListener("scroll", (event) => {
+  			    resizeTexts();
+  			  });
+  			  resizeTexts()
+  			</script>
+
 		</main>
 		<div class="participate" id="comment_participer">
 			<div class="participate__content">
