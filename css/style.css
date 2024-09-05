@@ -51,6 +51,8 @@ table {
 /*                              Page style                                    */
 /* -------------------------------------------------------------------------- */
 
+html { scroll-behavior: smooth; }
+
 main {
     display: flex;
     gap: 20px;
