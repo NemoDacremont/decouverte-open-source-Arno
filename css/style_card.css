@@ -21,6 +21,7 @@
     height: 85px;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .container-120824 h2 {
