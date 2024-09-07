@@ -11,6 +11,13 @@
     max-width: 1000px;
 }
 
+.participate__separator {
+	width: 75vw;
+	margin: 5rem auto 0;
+	border: none;
+	border-top: 1px solid #cccccc;
+}
+
 .participate__content {
     display: flex;
     flex-direction: column;
@@ -61,6 +68,10 @@
 }
 
 @media (max-width: 767px) {
+    .participate__separator {
+        width: 50vw;
+    }
+
     .participate {
         width: auto;
         flex-direction: column;
