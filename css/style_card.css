@@ -36,6 +36,10 @@ h3.card-120824__picture {
 		font-weight: 500;
 }
 
+.container-120824 {
+	max-width: calc(100% - 75px);  /* 75px: image width + margin */
+}
+
 .container-120824 h2 {
     font-family: "Montserrat", sans-serif;
     margin: 0;
