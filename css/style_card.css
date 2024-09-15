@@ -24,6 +24,17 @@
     object-fit: cover;
 }
 
+h3.card-120824__picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	color: #fdca28;
+	background-color: #05080c;
+    font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+}
+
 .container-120824 h2 {
     font-family: "Montserrat", sans-serif;
     margin: 0;
