@@ -37,7 +37,7 @@ h3.card-120824__picture {
 }
 
 .container-120824 {
-	max-width: calc(100% - 75px);
+	max-width: calc(100% - 75px);  /* 75px: image width + margin */
 }
 
 .container-120824 h2 {
